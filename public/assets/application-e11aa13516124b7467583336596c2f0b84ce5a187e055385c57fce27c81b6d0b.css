@@ -12364,7 +12364,7 @@ button.close {
 
 /* resize loading image */
 /* line 44, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/party.scss */
-#infscr-loading {
+#loading {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -12374,7 +12374,7 @@ button.close {
 }
 
 /* line 50, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/party.scss */
-#infscr-loading img {
+#loading img {
   position: absolute !important;
   width: 100px !important;
   top: calc(50% - 50px) !important;
@@ -12963,67 +12963,51 @@ fieldset[disabled] .btn {
   border: none !important;
 }
 
-@media (min-width: 600px) {
-  /* line 7, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
-  .container-box {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-  }
-}
-@media (max-width: 599px) {
-  /* line 14, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
-  .container-box {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fff;
-  }
-}
-/* line 23, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 7, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .content-search-box {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-/* line 28, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 12, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .content-box {
   margin-left: 15px;
   margin-right: 15px;
 }
 
-/* line 32, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 16, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .result-table {
   margin-top: 30px;
 }
 
-/* line 38, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 22, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #univ, #celeb, #from, #to {
   margin-bottom: 10px;
   font-size: 13pt;
 }
 
-/* line 44, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 28, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 input[readonly].form-control {
   cursor: pointer;
   background: transparent;
 }
 
-/* line 49, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 33, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .input-group {
   margin-bottom: 10px;
 }
 
-/* line 54, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 38, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #main-title {
   text-align: -webkit-center;
   font-size: 22pt;
   font-family: 'bm_jua';
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
-/* line 64, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 48, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .background-box {
   background-image: linear-gradient(to bottom, rgba(234, 76, 137, 0.5), rgba(234, 76, 137, 0.5)), url("test_back.png");
   background-image: -moz-linear-gradient(top, rgba(234, 76, 137, 0.5), rgba(234, 76, 137, 0.5)), url("test_back.png");
@@ -13033,17 +13017,17 @@ input[readonly].form-control {
   background-image: -webkit-linear-gradient(top, rgba(234, 76, 137, 0.5), rgba(234, 76, 137, 0.5)), url("test_back.png");
 }
 
-/* line 73, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 57, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .grid-margin-left {
   padding-right: 10px;
 }
 
-/* line 76, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 60, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .grid-margin-right {
   padding-left: 10px;
 }
 
-/* line 80, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 64, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .search_button {
   width: 100%;
   margin-bottom: 20px;
@@ -13053,47 +13037,47 @@ input[readonly].form-control {
   font-size: 13pt;
 }
 
-/* line 88, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 72, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .search_button:hover {
   background: #ea4c89;
   color: #e6e6e6;
   border-color: #e6e6e6;
 }
 
-/* line 94, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 78, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .search_button.active.focus, .search_button.active:focus, .search_button.focus, .search_button:active.focus, .search_button:active:focus, .search_button:focus {
   outline: 0;
 }
 
-/* line 98, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 82, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 th {
   color: #808080;
   text-align: center;
 }
 
-/* line 102, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 86, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 .table > tbody > tr > td {
   vertical-align: middle;
 }
 
-/* line 106, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 90, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #result-table tr td {
   color: #4d4d4d;
 }
 
-/* line 109, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 93, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #result-table {
   font-size: 11pt;
   text-align: center;
 }
 
-/* line 114, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 98, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #detail-table tr td {
   color: #4d4d4d;
   font-size: 13pt;
 }
 
-/* line 119, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 103, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #detail-title {
   color: #ea4c89;
   font-size: 20pt;
@@ -13101,39 +13085,39 @@ th {
   text-align: center;
 }
 
-/* line 125, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 109, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 #detail-table {
   text-align: center;
 }
 
-/* line 129, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 113, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 a > i.fa-times {
   color: #fff;
 }
 
-/* line 132, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 116, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 a > i.fa-times:hover {
   color: #e6e6e6;
 }
 
-/* line 135, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 119, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 a > i.fa-times:action {
   color: #808080;
 }
 
-/* line 139, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 123, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 a > i.fa-angle-right {
   color: #808080;
   font-size: 27pt;
   font-weight: bold;
 }
 
-/* line 144, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 128, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 a > i.fa-angle-right:hover {
   color: #ea4c89;
 }
 
-/* line 147, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
+/* line 131, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/home.scss */
 a > i.fa-angle-right:action {
   color: #808080;
 }
@@ -13163,4 +13147,45 @@ body {
   color: #4d4d4d;
   font-size: 13pt;
   background-color: #f4f3ef;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+
+@media (min-width: 600px) {
+  /* line 36, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/application.scss */
+  .container-box {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  /* line 41, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/application.scss */
+  .footer-image-box {
+    padding-left: 30px;
+  }
+
+  /* line 44, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/application.scss */
+  .footer-maker-box {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 599px) {
+  /* line 49, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/application.scss */
+  .container-box {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  /* line 54, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/application.scss */
+  .footer-image-box {
+    padding-left: 40px;
+  }
+
+  /* line 57, /Users/yoon/LikeLion/축제사이트/ourcampus_party/app/assets/stylesheets/application.scss */
+  .footer-maker-box {
+    padding-left: 40px;
+    margin-top: 10px;
+  }
 }

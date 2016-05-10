@@ -2,6 +2,8 @@ class HomeController < ApplicationController
   def index
     univs = Univ.where("name LIKE ?", "%#{params[:univ]}%").pluck(:id)
     celebs = Celeb.where("name LIKE ?", "%#{params[:celeb]}%").pluck(:id)
+    logger.debug("=========CELEB========")
+    logger.debug(params[:celeb])
 
     # select keyword
     Keyword.where("name LIKE ?", "#{params[:keyword]}")
@@ -18,7 +20,6 @@ class HomeController < ApplicationController
     else
       from_date = get_date(params[:from])
       to_date = get_date(params[:to])
-
       schedules = Schedule.all.select { |m| m.date >= from_date && m.date <= to_date }
     end
 
@@ -53,6 +54,67 @@ class HomeController < ApplicationController
 
     @fs = Kaminari.paginate_array(festivals).page(params[:page]).per(7)
 
+  end
+
+  def search
+    univs = Univ.where("name LIKE ?", "%#{params[:univ]}%").pluck(:id)
+    celebs = Celeb.where("name LIKE ?", "%#{params[:celeb]}%").pluck(:id)
+    logger.debug("=========CELEB========")
+    logger.debug(params[:celeb])
+
+    # select keyword
+    Keyword.where("name LIKE ?", "#{params[:keyword]}")
+
+    # select date
+    if (params[:from].nil? || params[:from] == "") && (params[:to].nil? || params[:to] == "")
+      schedules = Schedule.all
+    elsif params[:from].nil? || params[:from] == ""
+      date = get_date(params[:to])
+      schedules = Schedule.all.select { |m| m.date <= date }
+    elsif params[:to].nil? || params[:to] == ""
+      date = get_date(params[:from])
+      schedules = Schedule.all.select { |m| m.date >= date }
+    else
+      from_date = get_date(params[:from])
+      to_date = get_date(params[:to])
+      schedules = Schedule.all.select { |m| m.date >= from_date && m.date <= to_date }
+    end
+
+
+
+    # select univ
+    tmp_festivals = []
+    schedules.each do |s|
+      tmp_festivals += s.festivals.where(univ_id: univs)
+    end
+
+    tmp_festivals.uniq!
+
+    if params[:celeb].nil? || params[:celeb] == ""
+      festivals = tmp_festivals
+    else
+      # select celeb
+      festivals = []
+      tmp_festivals.each do |f|
+        status = false
+        f.festival_schedules.each do |fs|
+          fsc = fs.celebs.pluck(:id).count
+          arr = fs.celebs.pluck(:id) - celebs
+          if arr.count != fsc
+            status = true; break;
+          end
+        end
+        festivals << f if status == true
+      end
+    end
+
+
+    @fs = Kaminari.paginate_array(festivals).page(params[:page]).per(7)
+
+    respond_to do |format|
+      format.js
+      format.html { render '/home/index' }
+    end
   end
 
   def detail

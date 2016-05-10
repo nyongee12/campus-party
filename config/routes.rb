@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get 'home/index'
   post 'home/index'
 
+  get 'home/search'
+  post 'home/search'
+
   get 'home/get_name'
   get 'home/add_search'
   
